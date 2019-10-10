@@ -12,7 +12,7 @@ def render_response():
     if favorite_color == 'pink':
         response = "That's my favorite color!"
     else:
-        response = "My favorite color is pink."
+        response = "Ok."
     return render_template('response.html', responseFromServer=response)
     
     
