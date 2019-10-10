@@ -8,6 +8,7 @@ def render_main():
 
 @app.route("/response")
 def render_response():
+    favorite_color = request.args['color']
     return render_template('response.html')
     
     
