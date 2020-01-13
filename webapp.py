@@ -6,8 +6,9 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('home.html')
 
-@app.route("/response", method= ['POST', 'GET'])
+@app.route("/response", methods= ['POST', 'GET'])
 def render_response():
+    response = ":-/"
     if request.method == 'POST':
         favorite_color = request.form['color'] #get user's input for color input
         if favorite_color == 'pink':
